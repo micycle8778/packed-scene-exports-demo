@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkn4wx1wtf0tp"]
+
+[ext_resource type="Script" path="res://first_tool.gd" id="1_phnsr"]
+[ext_resource type="Texture2D" uid="uid://l632u0ckxi0g" path="res://icon.svg" id="1_tc1kw"]
+
+[node name="First Tool" type="Node2D"]
+script = ExtResource("1_phnsr")
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(0.258824, 0.521569, 0.207843, 1)
+position = Vector2(11, -21)
+scale = Vector2(0.115, 0.39)
+skew = 0.537561
+texture = ExtResource("1_tc1kw")
