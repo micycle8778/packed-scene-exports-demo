@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://ccqwlo4ky2sqv" path="res://player.tscn" id="1_d6lte"]
 [ext_resource type="PackedScene" uid="uid://dkn4wx1wtf0tp" path="res://first_tool.tscn" id="2_7ubxr"]
-[ext_resource type="Script" path="res://first_tool.gd" id="3_jj3mv"]
+[ext_resource type="Script" path="res://customizable_packed_scene.gd" id="3_m5nm4"]
 
-[sub_resource type="Resource" id="Resource_2na5e"]
-script = ExtResource("3_jj3mv")
+[sub_resource type="Resource" id="Resource_itshb"]
+script = ExtResource("3_m5nm4")
 scene = ExtResource("2_7ubxr")
 rotation_speed = 960
 
@@ -13,4 +13,4 @@ rotation_speed = 960
 
 [node name="Player" parent="." instance=ExtResource("1_d6lte")]
 position = Vector2(292, 199)
-tool_scene = SubResource("Resource_2na5e")
+tool_scene = SubResource("Resource_itshb")

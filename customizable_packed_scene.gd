@@ -13,7 +13,7 @@ var overrides: Dictionary = {}
 func _get(property):
 	if scene != null:
 		if not property in overrides:
-			return scene.instantiate().get(property)
+			return scene.instantiate().get_script().get_property_default_value(property)
 		else:
 			return overrides[property]
 
